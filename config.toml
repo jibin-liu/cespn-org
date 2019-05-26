@@ -5,7 +5,7 @@ languageCode = "cn-zh"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "cn"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "devcows"
+disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
@@ -25,6 +25,16 @@ paginate = 10
     name = "Blog"
     url  = "/blog/"
     weight = 2
+
+[[menu.main]]
+    parent = "Blog"
+    name = "会员专属活动"
+    url  = "/blog/会员专属活动"
+
+[[menu.main]]
+    parent = "Blog"
+    name = "网络讲座"
+    url  = "/blog/网络讲座"
 
 [[menu.main]]
     name = "FAQ"
@@ -96,19 +106,19 @@ paginate = 10
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/cespn-logo.jpg"
+    logo = "img/CESPN logo_3.jpg"
     logo_small = "img/cespn-logo-small.png"
-    address = """<p><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
-      </p>
-      """
-    latitude = "-12.043333"
-    longitude = "-77.028333"
+    # address = """<p><strong>Universal Ltd.</strong>
+    #     <br>13/25 New Avenue
+    #     <br>Newtown upon River
+    #     <br>45Y 73J
+    #     <br>England
+    #     <br>
+    #     <strong>Great Britain</strong>
+    #   </p>
+    #   """
+    # latitude = "-12.043333"
+    # longitude = "-77.028333"
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
@@ -124,7 +134,7 @@ paginate = 10
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-    categories = true
+    categories = false
     tags = true
     search = true
 
@@ -141,7 +151,7 @@ paginate = 10
     # For more informtion take a look at the README.
 
 [params.testimonials]
-    enable = true
+    enable = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
@@ -149,7 +159,7 @@ paginate = 10
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fa fa-file-code-o"
     title = "Do you want to see more?"
     subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
@@ -161,7 +171,7 @@ paginate = 10
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
-    title = "Our Clients"
+    title = "Our Team"
     subtitle = ""
 
 [params.recent_posts]
