@@ -1,4 +1,4 @@
-baseurl = "https://www.cespn.org"
+baseurl = "https://cespn-org.netlify.com/"
 title = "CESPN - Chinese Environmental Scholars & Professionals Network"
 theme = "hugo-universal-theme"
 languageCode = "cn-zh"
